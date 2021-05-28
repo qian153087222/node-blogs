@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/qian153087222/node-blogs.git",
   "author": "153087222@qq.com <153087222@qq.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "express": "^4.17.1",
+    "express-art-template": "^1.0.1",
+    "mongoose": "^5.12.11"
+  }
 }
