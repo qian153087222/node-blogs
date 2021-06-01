@@ -1,3 +1,5 @@
+require('./model/connect');
+require('./model/user');
 //引入express插件
 const express = require('express');
 //创建网站服务器

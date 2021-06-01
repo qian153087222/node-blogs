@@ -11,9 +11,9 @@
 <body>
     <div class="login-body">
         <div class="login-container">
-            <h4 class="title">黑马程序员 - 博客管理员登录</h4>
+            <h4 class="title">博客管理员登录</h4>
             <div class="login">
-                <form action="user.html">
+                <form action="user.html" method="POST" action='/login' in='loginFrom'>
                     <div class="form-group">
                         <label>邮件</label>
                         <input type="email" class="form-control" placeholder="请输入邮件地址">
@@ -30,6 +30,11 @@
     </div>
     <script src="/admin/lib/jquery/dist/jquery.min.js"></script>
     <script src="/admin/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $('#loginFrom').on('submit', function () {
+            return false;
+        })
+    </script>
 </body>
 
 </html>
