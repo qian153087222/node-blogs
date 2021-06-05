@@ -23,5 +23,8 @@ admin.get('/user-edit', require('./admin/user-edit-page'));
 // 新增用户
 admin.post('/user-edit',require('./admin/user-edit'));
 
+// 修改用户
+admin.post('/user-modify',require('./admin/user-modify'));
+
 //导出博客路由
 module.exports = admin;

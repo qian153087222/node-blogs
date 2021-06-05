@@ -12,7 +12,6 @@ const { home, admin } = require('./router');
 const app = express();
 //引入path
 const path = require('path');
-const { nextTick } = require('process');
 //处理post请求参数
 app.use(express.urlencoded({ extended: false }));
 //配置session
@@ -41,6 +40,11 @@ app.use('/admin', admin);
 
 app.use((err,req,res,next)=>{
     const result = JSON.parse(err);
+    for (const key in result) {
+        if (Object.hasOwnProperty.call(result, key)) {
+            
+        }
+    }
     res.redirect(`${result.path}?message=${result.message}`);
 });
 
